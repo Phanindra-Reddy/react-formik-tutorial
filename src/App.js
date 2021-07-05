@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import { theme, ThemeProvider } from "@chakra-ui/react";
+
+//import YoutubeForm from './components/YoutubeForm';
+//import CustomCompwithinFormik from './components/CustomCompwithinFormik';
+//import FormContainer from './components/Formik Coustom Components/FormikContainer';
+import LoginForm from './components/Formik Coustom Components/LoginForm';
+//import RegistrationForm from "./components/Formik Coustom Components/RegistrationForm";
+//import CourseEnrolmentForm from "./components/Formik Coustom Components/CourseEnrolmentForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        {/* <YoutubeForm/> */}
+
+        {/* <CustomCompwithinFormik/> */}
+
+        {/* <FormContainer /> */}
+
+        <LoginForm />
+
+        {/* <RegistrationForm/> */}
+
+        {/* <CourseEnrolmentForm /> */}
+
+
+
+      </div>
+    </ThemeProvider>
   );
 }
 
