@@ -1,35 +1,20 @@
 import React from "react";
 import "./App.css";
 
-import { theme, ThemeProvider } from "@chakra-ui/react";
+//import { theme, ThemeProvider } from "@chakra-ui/react";
 
-//import YoutubeForm from './components/YoutubeForm';
-//import CustomCompwithinFormik from './components/CustomCompwithinFormik';
-//import FormContainer from './components/Formik Coustom Components/FormikContainer';
-import LoginForm from './components/Formik Coustom Components/LoginForm';
-//import RegistrationForm from "./components/Formik Coustom Components/RegistrationForm";
-//import CourseEnrolmentForm from "./components/Formik Coustom Components/CourseEnrolmentForm";
+import FormContainer from './components/FormikContainer';
+//import DisplayFormDetails from "./components/DisplayFormDetails";
+
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        {/* <YoutubeForm/> */}
+    <div className="App">
+    
+      <FormContainer />
 
-        {/* <CustomCompwithinFormik/> */}
-
-        {/* <FormContainer /> */}
-
-        <LoginForm />
-
-        {/* <RegistrationForm/> */}
-
-        {/* <CourseEnrolmentForm /> */}
-
-
-
-      </div>
-    </ThemeProvider>
+      
+    </div>
   );
 }
 
